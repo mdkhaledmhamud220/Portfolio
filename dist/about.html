@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#dbe6e2] text-1xl p-5">
+    <div id="demo3"></div>
+    <div class="flex justify-center">
+        <div class="flex flex-col lg:flex-row lg:space-x-5 space-y-5 lg:space-y-0">
+            <div class="bg-white w-auto xl:w-xl rounded-2xl p-10 :space-y-5">
+                <div class="font-semibold text-2xl">Experience</div>
+                <div class="space-y-5">
+                    <div class="flex shadow rounded py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2021 - Present</p>
+                            <p class="font-medium text-2xl py-3">Themeforest Market</p>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2021 - 2023</p>
+                            <p class="font-medium text-2xl py-3">Envato Theme Developer</p>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2021 - 2023</p>
+                            <p class="font-medium text-2xl py-3">Marketing Expert GRP</p>
+                            <p>Web Developer & Business Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-auto xl:w-xl rounded-2xl p-10 space-y-5">
+                <div class="font-semibold text-2xl">Education</div>
+                <div class="space-y-5">
+                    <div class="flex shadow rounded py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2023 - Present</p>
+                            <p class="font-medium text-2xl py-3">Bsc. of Computer Science And Engineering</p>
+                            <p>University of Rajshahi</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2020 - 2021</p>
+                            <p class="font-medium text-2xl py-3">Bhola Government Collage</p>
+                            <p>Bhola sadar</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow py-5">
+                        <div><img src="image/experience.png" class="w-14 h-14"></div>
+                        <div>
+                            <p>2021 - 2023</p>
+                            <p class="font-medium text-2xl py-3">Tobgi Secondary School</p>
+                            <p>Bapta, Bhola</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("demo3").innerHTML = data;});
+        function toggleMenu() {
+
+            const menu = document.getElementById("mobile-menu");
+            const openIcon = document.getElementById("menu-open-icon");
+            const closeIcon = document.getElementById("menu-close-icon");
+
+            menu.classList.toggle("hidden");
+            openIcon.classList.toggle("hidden");
+            closeIcon.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
